@@ -1,0 +1,43 @@
+.btn {
+    background-color: aqua;
+
+}
+
+.tasks {
+    width: 500px;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    background-color: rgb(97, 170, 243);
+    padding: 10px;
+}
+
+.p-btn {
+    margin-top: 10px;
+    background-color: rgb(97, 170, 243);
+    padding: 10px;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+}
