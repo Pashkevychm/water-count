@@ -11,12 +11,23 @@
     <header>
         <img src="logo.png">
     </header>
-    <div class="main">
+    <div class="view">
         <div>
             <img src="water.png">
         </div>
-        <Input type="number">
-        <button class="p-btn">Записати</button>
+
+        
+    <div class="today-display">
+        <p class="today-1abel">Випито сьогодні: </p>
+        <p id="consumed-today" class="today-amount">0 ml</p>
+</div>
+    <div class="input-group">
+        <input type="number" id="water-input" placeholder= "Enter amount in m1">
+        <button id="add-btn" class="btn btn-primary">
+        Записати
+        </button>
+</div>
+
     </div>
 </body>
 </html>
