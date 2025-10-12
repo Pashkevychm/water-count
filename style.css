@@ -1,3 +1,7 @@
+#chart-view {
+    display: none;
+}
+
 .btn {
     background-color: aqua;
 

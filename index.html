@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +8,45 @@
     <link rel='stylesheet' href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <img src="logo.png">
-    </header>
-    <div class="view">
-        <div>
+
+    <div class="view" id="tracker-view">
+        <header>
+            <img src="logo.png">
             <img src="water.png">
+        </header>
+
+        <div class="today-display">
+            <p class="today-1abel">Випито сьогодні: </p>
+            <p id="consumed-today" class="today-amount">0 ml</p>
+        </div>
+        <div class="input-group">
+            <input type="number" id="water-input" placeholder="Enter amount in m1">
+            <button id="add-btn" class="btn btn-primary">
+                Записати
+            </button>
         </div>
 
-        
-    <div class="today-display">
-        <p class="today-1abel">Випито сьогодні: </p>
-        <p id="consumed-today" class="today-amount">0 ml</p>
-</div>
-    <div class="input-group">
-        <input type="number" id="water-input" placeholder= "Enter amount in m1">
-        <button id="add-btn" class="btn btn-primary">
-        Записати
-        </button>
-</div>
+        <div class="history-link-container">
+            <button id="view-history-btn" class="ink-btn">Переглянути історію за тиждень</button>
+        </div>
 
     </div>
+
+    <div class="view" id="chart-view">
+        <header>
+            <h1 class="title">Історія за тиждень</h1>
+        </header>
+        <div class="chart-container">
+            <canvas id="history-chart"></canvas>
+        </div>
+        <div class="chart-view-footer">
+            <button id="back-btn" class="btn btn-secondary">
+                Back to Tracker
+            </button>
+        </div>
+    </div>
 </body>
+
 </html>
