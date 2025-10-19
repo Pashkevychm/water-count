@@ -4,34 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Water Tracker</title>
     <link rel='stylesheet' href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js" defer></script>
 </head>
 
 <body>
-
     <div class="view" id="tracker-view">
         <header>
             <img src="logo.png">
-            <img src="water.png">
         </header>
 
         <div class="today-display">
-            <p class="today-1abel">Випито сьогодні: </p>
+            <img src="water.png">
+            <p class="today-label">Випито сьогодні: </p>
             <p id="consumed-today" class="today-amount">0 ml</p>
         </div>
         <div class="input-group">
-            <input type="number" id="water-input" placeholder="Enter amount in m1">
+            <input type="number" id="water-input" placeholder="Введіть кількість в мл">
             <button id="add-btn" class="btn btn-primary">
                 Записати
             </button>
         </div>
 
         <div class="history-link-container">
-            <button id="view-history-btn" class="ink-btn">Переглянути історію за тиждень</button>
+            <button id="view-history-btn" class="link-btn">Переглянути історію за тиждень</button>
         </div>
-
     </div>
 
     <div class="view" id="chart-view">
@@ -43,7 +42,7 @@
         </div>
         <div class="chart-view-footer">
             <button id="back-btn" class="btn btn-secondary">
-                Back to Tracker
+                Назад
             </button>
         </div>
     </div>

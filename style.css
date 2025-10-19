@@ -1,14 +1,16 @@
+body {
+    font-family: sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 #chart-view {
     display: none;
 }
 
 .btn {
     background-color: aqua;
-
-}
-
-.tasks {
-    width: 500px;
 }
 
 .view {
@@ -25,23 +27,38 @@ input {
     padding: 10px;
 }
 
-.p-btn {
-    margin-top: 10px;
-    background-color: rgb(97, 170, 243);
-    padding: 10px;
-}
-
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
 header {
     text-align: center;
 }
 
 header img {
     width: 100px;
+}
+
+.today-amount {
+    margin: 5px 0 0 0;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: blue;
+}
+
+.link-btn {
+    background: none;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    font-size: 0.95rem;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-secondary {
+    background-color: var(--text-light);
+    color: black;
+}
+.today-label {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--text-light);
 }
